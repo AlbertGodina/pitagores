@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A3 — Àrea de polígons regulars</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand"><div class="logo-icon">△</div> Pitàgores</a>
+  <div class="nav-links">
+    <a href="index.html" data-t="nav_home"></a>
+    <a href="a1.html" data-t="nav_a1"></a>
+    <a href="a2.html" data-t="nav_a2"></a>
+    <a href="a3.html" class="active" data-t="nav_a3"></a>
+    <a href="a4.html" data-t="nav_a4"></a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn" data-lang="ca">CA</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+</nav>
+
+<div class="activity-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html" data-t="nav_home"></a> / A3</div>
+    <div class="act-title-row">
+      <div class="act-icon" style="background:rgba(167,139,250,0.08);border-color:rgba(167,139,250,0.2)">⬡</div>
+      <div class="act-title-text">
+        <h1>Àrea de polígons regulars</h1>
+        <div class="subtitle">Exercicis de reforç i ampliació — complementa l'Activitat 3 de classe</div>
+      </div>
+    </div>
+    <div class="act-meta">
+      <div class="meta-chip">👤 Individual</div>
+      <div class="meta-chip">📚 Matemàtiques</div>
+      <div class="meta-chip">📐 Pitàgores · Polígons regulars</div>
+    </div>
+  </div>
+</div>
+
+<div class="content-grid">
+<div class="main-col">
+
+<div class="theory-card">
+  <h2 data-t="theory_label"></h2>
+  <div class="theory-body">
+    <p>Un <strong>hexàgon regular</strong> de costat <em>s</em> es descompon en <strong>6 triangles equilàters</strong> iguals. Cadascun té base = <em>s</em> i alçada (apotema del triangle) <em>h = s·√3/2</em>.</p>
+    <div class="formula-box">Àrea hexàgon = 6 × (s² · √3 / 4) = (3·√3/2) · s²</div>
+    <p>O també: Àrea = <strong>3 · s · a</strong>, on <em>a</em> és l'apotema de l'hexàgon (distància del centre al punt mig d'un costat).</p>
+    <p>Apotema de l'hexàgon: <code style="font-family:DM Mono,monospace;color:var(--purple)">a = s·√3/2</code></p>
+  </div>
+</div>
+
+<div class="section-label">
+  <div class="section-label-line"></div>
+  <div class="section-label-text reinf" data-t="sec_reinf"></div>
+  <div class="section-label-line"></div>
+</div>
+
+<!-- R1 -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num">R1</div><div class="ex-title">Hexàgons de costats 2, 3 i 4 cm</div></div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Calcula l'alçada dels triangles equilàters interiors i l'àrea de cada hexàgon regular:</p>
+    <ul>
+      <li>Hexàgon A: costat <strong>s = 2 cm</strong></li>
+      <li>Hexàgon B: costat <strong>s = 3 cm</strong></li>
+      <li>Hexàgon C: costat <strong>s = 4 cm</strong></li>
+    </ul>
+    <p>Observa com creix l'àrea en relació amb el costat. Si el costat es dobla, quantes vegades augmenta l'àrea?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>L'alçada del triangle equilàter interior: h = s·√3/2. Per a s=2: h = √3 cm.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea hexàgon = (3√3/2)·s². Per a s=2: A = (3√3/2)·4 = 6√3 ≈ 10.39 cm².</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Si el costat es dobla (de s a 2s), l'àrea es multiplica per (2)²=4. L'àrea creix quadràticament.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">A</div><p>s=2 → h=√3 ≈ 1.73 cm · Àrea = 6√3 ≈ <strong>10.39 cm²</strong></p></div>
+        <div class="sol-step"><div class="sol-n">B</div><p>s=3 → h=3√3/2 ≈ 2.60 cm · Àrea = (3√3/2)·9 = 27√3/2 ≈ <strong>23.38 cm²</strong></p></div>
+        <div class="sol-step"><div class="sol-n">C</div><p>s=4 → h=2√3 ≈ 3.46 cm · Àrea = (3√3/2)·16 = 24√3 ≈ <strong>41.57 cm²</strong></p></div>
+        <div class="sol-step"><div class="sol-n">↑</div><p>De A a C, el costat es dobla (2→4) i l'àrea es multiplica per 4 (10.39×4 ≈ 41.57). ✓</p></div>
+        <div class="sol-answer">A: 6√3 cm² · B: 27√3/2 cm² · C: 24√3 cm²</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- R2 -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num">R2</div><div class="ex-title">Trobem el costat donat l'àrea</div></div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Un hexàgon regular té una àrea de <strong>54√3 cm²</strong>. Quant mesura el seu costat?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea = (3√3/2)·s² = 54√3. Aïlla s².</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>s² = 54√3 / (3√3/2) = 54√3 · (2/(3√3)) = 108√3/(3√3) = 36. Llavors s = √36 = 6 cm.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>(3√3/2)·s² = 54√3</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>s² = 54√3 × (2/(3√3)) = 108/3 = 36</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>s = √36 = <strong>6 cm</strong></p></div>
+        <div class="sol-answer">s = 6 cm</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- R3: Apotema -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num">R3</div><div class="ex-title">L'apotema com a punt de partida</div></div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Un hexàgon regular té una <strong>apotema de 5√3 cm</strong> (l'apotema és la distància del centre al punt mig d'un costat).</p>
+    <p>a) Calcula el costat de l'hexàgon. (Recorda: a = s·√3/2)</p>
+    <p>b) Calcula l'àrea.</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>De a = s·√3/2 aïlla s: s = 2a/√3 = 2·(5√3)/√3 = 10 cm.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea = (3√3/2)·s² = (3√3/2)·100 = 150√3 cm².</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>a = s·√3/2 → 5√3 = s·√3/2 → s = 10√3/√3 = <strong>10 cm</strong></p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Àrea = (3√3/2)·10² = (3√3/2)·100 = 150√3 ≈ <strong>259.8 cm²</strong></p></div>
+        <div class="sol-answer">s = 10 cm · Àrea = 150√3 ≈ 259.8 cm²</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXT -->
+<div class="section-label" style="margin-top:2rem">
+  <div class="section-label-line"></div>
+  <div class="section-label-text ext" data-t="sec_ext"></div>
+  <div class="section-label-line"></div>
+</div>
+
+<!-- E1: Honeycomb -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num ext">E1</div><div class="ex-title">🐝 La bresca d'abella</div></div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Les bresques d'abella estan formades per hexàgons regulars perquè és la forma que maximitza l'emmagatzematge amb la mínima cera. Cada cel·la és un hexàgon regular de <strong>costat 3 mm</strong>.</p>
+    <p>a) Quina és l'àrea d'una sola cel·la (en mm²)?</p>
+    <p>b) Un panell de bresca té <strong>500 cel·les</strong>. Quina és l'àrea total del panell? (Tingues en compte que els hexàgons s'encaixen sense espais.)</p>
+    <p>c) Expressa l'àrea del panell en cm².</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea d'una cel·la = (3√3/2)·3² = (3√3/2)·9 = 27√3/2 ≈ 23.38 mm².</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea total = 500 × 27√3/2 = 6750√3 mm².</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>1 cm² = 100 mm². Divideix per 100: 6750√3/100 = 67.5√3 ≈ 116.9 cm².</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Àrea cel·la = (3√3/2)·9 = 27√3/2 ≈ 23.38 mm²</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Àrea panell = 500 × 27√3/2 = 13500√3/2 = 6750√3 ≈ 11691 mm²</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>En cm²: 6750√3/100 = 67.5√3 ≈ <strong>116.9 cm²</strong></p></div>
+        <div class="sol-answer">1 cel·la ≈ 23.38 mm² · Panell = 67.5√3 ≈ 116.9 cm²</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E2: Hexagonal floor tile -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num ext">E2</div><div class="ex-title">🏠 Rajoles hexagonals</div></div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Un dissenyador d'interiors vol enrajolar un bany de <strong>3 m × 2.5 m</strong> amb rajoles hexagonals regulars de <strong>costat 10 cm</strong>.</p>
+    <p>a) Quina és l'àrea d'una rajola en cm²?</p>
+    <p>b) Quantes rajoles, aproximadament, calen per cobrir el bany? (Considera que no hi ha pèrdues per retallades.)</p>
+    <p>c) Si cada rajola costa <strong>2.50 €</strong>, quant costarà enrajolar el bany?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea rajola = (3√3/2)·10² = 150√3 ≈ 259.8 cm².</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea bany = 300 cm × 250 cm = 75.000 cm². Número de rajoles = 75000 / 259.8 ≈ 289.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Cost = 289 × 2.50 €. En un projecte real sempre s'afegeix un 10-15% de marge per retallades!</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Àrea rajola = (3√3/2)·100 = 150√3 ≈ 259.8 cm²</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Àrea bany = 300×250 = 75.000 cm² → Rajoles = 75000/259.8 ≈ <strong>289 rajoles</strong></p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>Cost = 289 × 2.50 = <strong>722.50 €</strong></p></div>
+        <div class="sol-answer">289 rajoles · Cost ≈ 722.50 €</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E3: Pentagon -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num ext">E3</div><div class="ex-title">⭐ El camp de futbol americà — el pentàgon</div></div>
+    <div class="stars"><span>★</span><span>★</span><span>★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>L'emblema del Departament de Defensa dels EUA és un pentàgon (5 costats) regular. Un pentàgon regular de costat <em>s</em> es pot dividir en <strong>5 triangles isòsceles</strong> iguals, cadascun amb angle central de 72°.</p>
+    <p>Sabent que l'apotema (alçada de cada triangle isòsceles) d'un pentàgon regular de costat <strong>s = 6 cm</strong> és <strong>a = s·√(25+10√5)/10 ≈ 4.13 cm</strong>, calcula:</p>
+    <p>a) L'àrea de cada triangle isòsceles interior.</p>
+    <p>b) L'àrea total del pentàgon.</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Cada triangle interior té base = s = 6 cm i alçada = a ≈ 4.13 cm. Àrea triangle = (base × alçada)/2.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea triangle = (6 × 4.13)/2 = 12.39 cm². Àrea pentàgon = 5 × 12.39 cm².</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Àrea triangle interior = (6 × 4.13)/2 = 24.78/2 = <strong>12.39 cm²</strong></p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Àrea pentàgon = 5 × 12.39 = <strong>61.94 cm²</strong></p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>Nota: la fórmula general és A = (5·s·a)/2. S'usa el mateix principi que l'hexàgon!</p></div>
+        <div class="sol-answer">Àrea ≈ 61.94 cm² · (fórmula: A = 5·s·a/2)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- main-col -->
+
+<aside class="sidebar">
+  <div class="tool-card" id="pyth-calc">
+    <div class="tool-header" data-t="calc_title"></div>
+    <div class="tool-body">
+      <div class="calc-mode-row">
+        <button class="active" data-mode="c" data-t="calc_find_c"></button>
+        <button data-mode="a" data-t="calc_find_a"></button>
+        <button data-mode="b" data-t="calc_find_b"></button>
+      </div>
+      <div class="calc-hint" data-t="calc_leave"></div>
+      <div class="calc-fields">
+        <div class="calc-field"><label data-t="calc_leg_a"></label><input type="number" id="ci-a" min="0" step="any"></div>
+        <div class="calc-field"><label data-t="calc_leg_b"></label><input type="number" id="ci-b" min="0" step="any"></div>
+        <div class="calc-field full"><label data-t="calc_hyp"></label><input type="number" id="ci-c" min="0" step="any" disabled></div>
+      </div>
+      <button class="calc-go" data-t="calc_go"></button>
+      <div class="calc-out"></div>
+    </div>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-header" data-t="hex_title"></div>
+    <div class="tool-body">
+      <div class="hex-side-input">
+        <label data-t="hex_side_lbl"></label>
+        <input type="number" id="hex-svg-side" min="0.5" max="5" step="0.5" value="1">
+      </div>
+      <div class="hex-wrap">
+        <svg id="hex-svg" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div class="hex-info" id="hex-svg-info"></div>
+      <div class="hex-controls">
+        <button class="hex-btn" id="hex-svg-decomp" data-t="hex_decomp"></button>
+        <button class="hex-btn" id="hex-svg-reset" data-t="hex_reset"></button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+</div>
+<footer class="footer"><p data-t="footer"></p></footer>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

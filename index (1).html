@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pitàgores & Figures Planes — 2n ESO</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand"><div class="logo-icon">△</div> Pitàgores</a>
+  <div class="nav-links">
+    <a href="index.html" class="active" data-t="nav_home"></a>
+    <a href="a1.html" data-t="nav_a1"></a>
+    <a href="a2.html" data-t="nav_a2"></a>
+    <a href="a3.html" data-t="nav_a3"></a>
+    <a href="a4.html" data-t="nav_a4"></a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn" data-lang="ca">CA</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge" data-t="hero_badge"></div>
+  <h1>
+    Figures planes,<br>
+    <span class="highlight">Àrees & Pitàgores</span>
+  </h1>
+  <p data-t="hero_desc"></p>
+</section>
+
+<div class="container">
+  <!-- Formula showcase -->
+  <div style="display:flex;justify-content:center;margin-bottom:2rem">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem 2rem;text-align:center">
+      <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary);margin-bottom:0.6rem">Teorema de Pitàgores</div>
+      <div style="font-family:'DM Mono',monospace;font-size:1.5rem;color:var(--primary)">a² + b² = c²</div>
+      <svg viewBox="0 0 220 130" style="width:200px;margin-top:0.75rem" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="25,105 25,30 165,105" fill="rgba(56,189,248,0.07)" stroke="#38bdf8" stroke-width="2"/>
+        <polyline points="25,90 40,90 40,105" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+        <text x="16" y="70" fill="#94a3b8" font-size="13" font-family="DM Mono,monospace">a</text>
+        <text x="88" y="120" fill="#94a3b8" font-size="13" font-family="DM Mono,monospace">b</text>
+        <text x="88" y="63" fill="#38bdf8" font-size="14" font-weight="bold" font-family="DM Mono,monospace">c</text>
+        <rect x="0" y="30" width="25" height="75" fill="rgba(251,146,60,0.06)" stroke="#fb923c" stroke-width="1" stroke-dasharray="3,2"/>
+        <rect x="25" y="105" width="140" height="20" fill="rgba(251,146,60,0.06)" stroke="#fb923c" stroke-width="1" stroke-dasharray="3,2"/>
+        <text x="9" y="71" fill="#fb923c" font-size="8" font-family="DM Mono,monospace">a²</text>
+        <text x="88" y="120" fill="none"/>
+        <text x="86" y="122" fill="#fb923c" font-size="8" font-family="DM Mono,monospace">b²</text>
+        <text x="180" y="72" fill="#34d399" font-size="9" font-family="DM Mono,monospace">=c²</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Activity cards -->
+  <div class="activities-grid">
+
+    <a href="a1.html" class="activity-card" style="--card-color:#38bdf8;--card-glow:rgba(56,189,248,0.06)">
+      <div class="card-eyebrow" data-t="nav_a1">A1</div>
+      <div class="card-icon">📐</div>
+      <h3>Triangles rectangles i Pitàgores</h3>
+      <p>Reforç i ampliació: troba costats desconeguts, calcula perímetres i aplica Pitàgores en situacions noves.</p>
+      <div class="card-cta">
+        <div class="card-tags"><span class="tag">Triangles</span><span class="tag">Pitàgores</span></div>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="a2.html" class="activity-card" style="--card-color:#fb923c;--card-glow:rgba(251,146,60,0.06)">
+      <div class="card-eyebrow" data-t="nav_a2">A2</div>
+      <div class="card-icon">⬛</div>
+      <h3>Quadrats «girats» i àrees</h3>
+      <p>Pràctica addicional amb quadrats no alineats i ampliació cap a contextos de disseny, videojocs i art.</p>
+      <div class="card-cta">
+        <div class="card-tags"><span class="tag">Àrees</span><span class="tag">Geoplanell</span></div>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="a3.html" class="activity-card" style="--card-color:#a78bfa;--card-glow:rgba(167,139,250,0.06)">
+      <div class="card-eyebrow" data-t="nav_a3">A3</div>
+      <div class="card-icon">⬡</div>
+      <h3>Àrea de polígons regulars</h3>
+      <p>Hexàgons de diferents costats, bresques d'abella, rajoles i extensions cap a altres polígons regulars.</p>
+      <div class="card-cta">
+        <div class="card-tags"><span class="tag">Hexàgons</span><span class="tag">Polígons</span></div>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="a4.html" class="activity-card" style="--card-color:#34d399;--card-glow:rgba(52,211,153,0.06)">
+      <div class="card-eyebrow" data-t="nav_a4">A4</div>
+      <div class="card-icon">🌍</div>
+      <h3>Aplicacions reals de Pitàgores</h3>
+      <p>De l'escala al mapa: problemes d'escales, distàncies GPS, drons, construcció i esport.</p>
+      <div class="card-cta">
+        <div class="card-tags"><span class="tag">Aplicacions</span><span class="tag">Coordenades</span></div>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer class="footer"><p data-t="footer"></p></footer>
+<script src="js/i18n.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded',()=>{ initLang(); });
+</script>
+</body>
+</html>

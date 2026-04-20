@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A1 — Triangles rectangles i Pitàgores</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand"><div class="logo-icon">△</div> Pitàgores</a>
+  <div class="nav-links">
+    <a href="index.html" data-t="nav_home"></a>
+    <a href="a1.html" class="active" data-t="nav_a1"></a>
+    <a href="a2.html" data-t="nav_a2"></a>
+    <a href="a3.html" data-t="nav_a3"></a>
+    <a href="a4.html" data-t="nav_a4"></a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn" data-lang="ca">CA</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+</nav>
+
+<div class="activity-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html" data-t="nav_home"></a> / A1</div>
+    <div class="act-title-row">
+      <div class="act-icon">📐</div>
+      <div class="act-title-text">
+        <h1>Triangles rectangles i Pitàgores</h1>
+        <div class="subtitle">Exercicis de reforç i ampliació — complementa l'Activitat 1 de classe</div>
+      </div>
+    </div>
+    <div class="act-meta">
+      <div class="meta-chip">👤 Individual</div>
+      <div class="meta-chip">📚 Matemàtiques</div>
+      <div class="meta-chip">📐 Teorema de Pitàgores</div>
+    </div>
+  </div>
+</div>
+
+<div class="content-grid">
+<div class="main-col">
+
+<!-- THEORY -->
+<div class="theory-card">
+  <h2 data-t="theory_label"></h2>
+  <div class="theory-body">
+    <p>En un <strong>triangle rectangle</strong>, els dos costats que formen l'angle recte s'anomenen <strong>catets</strong> (a i b), i el costat oposat a l'angle recte és la <strong>hipotenusa</strong> (c), que és sempre el costat més llarg.</p>
+    <div class="formula-box">a² + b² = c² &nbsp;&nbsp; → &nbsp;&nbsp; c = √(a²+b²)</div>
+    <p>Per trobar un <strong>catet</strong>: &nbsp;<code style="font-family:DM Mono,monospace;color:var(--primary)">a = √(c²−b²)</code></p>
+  </div>
+</div>
+
+<!-- REINFORCEMENT SECTION -->
+<div class="section-label">
+  <div class="section-label-line"></div>
+  <div class="section-label-text reinf" data-t="sec_reinf"></div>
+  <div class="section-label-line"></div>
+</div>
+
+<!-- R1: Pythagorean triples -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label">
+      <div class="ex-num">R1</div>
+      <div class="ex-title">Ternes pitagòriques — tres en un</div>
+    </div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Les <strong>ternes pitagòriques</strong> són conjunts de tres enters (a, b, c) que compleixen exactament <em>a²+b²=c²</em>. Comprova si les tres ternes següents compleixen el teorema, i per a les que sí, digues quina és la hipotenusa:</p>
+    <ul>
+      <li>Terna A: <strong>5, 12, 13</strong></li>
+      <li>Terna B: <strong>8, 15, 16</strong></li>
+      <li>Terna C: <strong>7, 24, 25</strong></li>
+    </ul>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Per comprovar una terna (a,b,c), calcula a²+b² i mira si dóna c². Recorda que la hipotenusa és sempre el número més gran dels tres.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Terna A: 5²+12² = 25+144 = 169. Comprova si 13² = 169.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Terna B: 8²+15² = 64+225 = 289. Ara, 16² = 256. Són iguals?</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p><strong>Terna A (5,12,13):</strong> 5²+12² = 25+144 = 169 = 13² ✓ — SÍ és pitagòrica. Hipotenusa = 13.</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p><strong>Terna B (8,15,16):</strong> 8²+15² = 64+225 = 289, però 16² = 256. 289 ≠ 256 ✗ — NO és pitagòrica.</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p><strong>Terna C (7,24,25):</strong> 7²+24² = 49+576 = 625 = 25² ✓ — SÍ és pitagòrica. Hipotenusa = 25.</p></div>
+        <div class="sol-answer">Pitagòriques: A i C. No pitagòrica: B.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- R2: Find the missing side -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label">
+      <div class="ex-num">R2</div>
+      <div class="ex-title">Trobem el costat que falta</div>
+    </div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Calcula el costat desconegut de cada triangle rectangle. Dóna el resultat en forma exacta (arrel) i aproximat (2 decimals).</p>
+    <ul>
+      <li>Triangle I: catets <strong>9</strong> i <strong>40</strong> → hipotenusa?</li>
+      <li>Triangle II: hipotenusa <strong>20</strong>, catet <strong>12</strong> → catet?</li>
+      <li>Triangle III: catets <strong>√7</strong> i <strong>3</strong> → hipotenusa?</li>
+    </ul>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Triangle I: els dos catets ja els tens, aplica c = √(9²+40²).</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Triangle II: tens la hipotenusa i un catet, així que b = √(c²−a²) = √(20²−12²).</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Triangle III: un catet és √7, que al quadrat dóna 7. Llavors c² = (√7)²+3² = 7+9 = 16. Quant és √16?</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p><strong>Triangle I:</strong> c = √(81+1600) = √1681 = <strong>41</strong> (exacte! Una altra terna pitagòrica: 9-40-41)</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p><strong>Triangle II:</strong> b = √(400−144) = √256 = <strong>16</strong> (exacte! Terna: 12-16-20)</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p><strong>Triangle III:</strong> c² = (√7)²+3² = 7+9 = 16 → c = √16 = <strong>4</strong></p></div>
+        <div class="sol-answer">I: c = 41 · II: b = 16 · III: c = 4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- R3: Perimeter of a right triangle -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label">
+      <div class="ex-num">R3</div>
+      <div class="ex-title">Perímetre sense totes les dades</div>
+    </div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Un triangle rectangle isòsceles té la hipotenusa de <strong>10 cm</strong>. Calcula el perímetre del triangle. (Isòsceles significa que els dos catets iguals.)</p>
+    <div class="fig">
+      <svg viewBox="0 0 200 140" style="max-width:200px" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="100,20 170,120 30,120" fill="rgba(56,189,248,0.07)" stroke="#38bdf8" stroke-width="2"/>
+        <polyline points="85,120 85,105 100,105" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+        <text x="53" y="78" fill="#94a3b8" font-size="12" font-family="DM Mono,monospace">a</text>
+        <text x="138" y="78" fill="#94a3b8" font-size="12" font-family="DM Mono,monospace">a</text>
+        <text x="90" y="138" fill="#38bdf8" font-size="12" font-family="DM Mono,monospace">10 cm</text>
+      </svg>
+    </div>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Si els dos catets són iguals (a=b) i la hipotenusa és c=10, llavors Pitàgores queda: a²+a² = 10².</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>2a² = 100, per tant a² = 50, i a = √50 = 5√2.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Perímetre = a + a + c = 5√2 + 5√2 + 10 = 10√2 + 10.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Isòsceles → a = b. Apliquem Pitàgores: a² + a² = 10²</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>2a² = 100 → a² = 50 → a = √50 = 5√2 ≈ 7.07 cm</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>Perímetre = 5√2 + 5√2 + 10 = 10√2 + 10 = 10(√2+1) ≈ 24.14 cm</p></div>
+        <div class="sol-answer">P = 10(1+√2) ≈ 24.14 cm</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- R4: Altitude of equilateral triangle -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label">
+      <div class="ex-num">R4</div>
+      <div class="ex-title">Alçada d'un triangle equilàter</div>
+    </div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Un triangle equilàter té els tres costats de <strong>8 cm</strong>. L'alçada des d'un vèrtex fins al costat oposat forma dos triangles rectangles iguals. Calcula l'alçada i l'àrea del triangle equilàter.</p>
+    <div class="fig">
+      <svg viewBox="0 0 200 150" style="max-width:200px" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="100,15 175,135 25,135" fill="rgba(167,139,250,0.07)" stroke="#a78bfa" stroke-width="2"/>
+        <line x1="100" y1="15" x2="100" y2="135" stroke="var(--accent)" stroke-width="1.8" stroke-dasharray="4,3"/>
+        <polyline points="100,120 115,120 115,135" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+        <text x="51" y="82" fill="#94a3b8" font-size="12" font-family="DM Mono,monospace">8 cm</text>
+        <text x="130" y="82" fill="#94a3b8" font-size="12" font-family="DM Mono,monospace">8 cm</text>
+        <text x="93" y="82" fill="#fb923c" font-size="12" font-family="DM Mono,monospace">h</text>
+        <text x="45" y="150" fill="#a78bfa" font-size="11" font-family="DM Mono,monospace">8 cm</text>
+        <text x="52" y="148" fill="#94a3b8" font-size="11" font-family="DM Mono,monospace">4 cm</text>
+        <text x="110" y="148" fill="#94a3b8" font-size="11" font-family="DM Mono,monospace">4 cm</text>
+      </svg>
+    </div>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>L'alçada divideix la base en dues meitats de 4 cm cadascuna. Es forma un triangle rectangle amb hipotenusa 8 cm i un catet 4 cm.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>h = √(8²−4²) = √(64−16) = √48 = 4√3.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea = (base × alçada) / 2 = (8 × 4√3) / 2 = 16√3.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>L'alçada biseca la base: catet horitzontal = 8/2 = 4 cm. Hipotenusa = 8 cm.</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>h² = 8²−4² = 64−16 = 48 → h = √48 = 4√3 ≈ 6.93 cm</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>Àrea = (8 × 4√3) / 2 = 16√3 ≈ 27.71 cm²</p></div>
+        <div class="sol-answer">h = 4√3 ≈ 6.93 cm · A = 16√3 ≈ 27.71 cm²</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXTENSION SECTION -->
+<div class="section-label" style="margin-top:2rem">
+  <div class="section-label-line"></div>
+  <div class="section-label-text ext" data-t="sec_ext"></div>
+  <div class="section-label-line"></div>
+</div>
+
+<!-- E1: Football pitch diagonal -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label">
+      <div class="ex-num ext">E1</div>
+      <div class="ex-title">⚽ La diagonal del camp de futbol</div>
+    </div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Un camp de futbol oficial mesura <strong>105 m de llarg</strong> i <strong>68 m d'ample</strong>. Un porter llança la pilota des d'un extrem fins a l'extrem oposat en diagonal.</p>
+    <p>a) Quina distància recorre la pilota, com a mínim, per arribar a l'extrem oposat en diagonal?</p>
+    <p>b) Un jugador afirma que pot llançar la pilota <strong>130 m</strong>. Pot cobrir tota la diagonal?</p>
+    <div class="fig">
+      <svg viewBox="0 0 220 120" style="max-width:220px" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="20" width="200" height="80" fill="rgba(52,211,153,0.06)" stroke="#34d399" stroke-width="2" rx="2"/>
+        <line x1="10" y1="20" x2="210" y2="100" stroke="#fb923c" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="105" y="14" fill="#34d399" font-size="11" font-family="DM Mono,monospace" text-anchor="middle">105 m</text>
+        <text x="218" y="65" fill="#34d399" font-size="11" font-family="DM Mono,monospace">68 m</text>
+        <text x="110" y="72" fill="#fb923c" font-size="12" font-family="DM Mono,monospace" text-anchor="middle">d = ?</text>
+        <circle cx="10" cy="20" r="4" fill="#38bdf8"/>
+        <circle cx="210" cy="100" r="4" fill="#38bdf8"/>
+      </svg>
+    </div>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>La diagonal del rectangle és la hipotenusa d'un triangle rectangle amb catets 105 m i 68 m.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>d = √(105²+68²) = √(11025+4624) = √15649</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>√15649 ≈ 125.1 m. Compara amb 130 m per respondre la part b.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Catets del triangle rectangle: a = 105 m, b = 68 m</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>d = √(105²+68²) = √(11025+4624) = √15649 ≈ <strong>125.1 m</strong></p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>El jugador pot llançar 130 m > 125.1 m → <strong>Sí, pot cobrir la diagonal!</strong></p></div>
+        <div class="sol-answer">d ≈ 125.1 m · Sí, 130 m és suficient</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E2: TV screen -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label">
+      <div class="ex-num ext">E2</div>
+      <div class="ex-title">📺 La mida de la televisió</div>
+    </div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Les televisions es mesuren per la diagonal de la pantalla. Una tele de <strong>55 polzades</strong> (1 polzada = 2.54 cm) té una relació d'aspecte <strong>16:9</strong>, és a dir, per cada 16 cm d'amplada hi ha 9 cm d'alçada.</p>
+    <p>a) Quant mesura la diagonal en centímetres?</p>
+    <p>b) Si l'amplada és <strong>k·16</strong> i l'alçada és <strong>k·9</strong>, expressa la diagonal en funció de <em>k</em> i troba el valor de <em>k</em>.</p>
+    <p>c) Calcula l'amplada i l'alçada de la pantalla en centímetres.</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Primer converteix 55 polzades a cm: 55 × 2.54 = 139.7 cm. Aquesta és la diagonal (hipotenusa).</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Catets: amplada = 16k, alçada = 9k. Pitàgores: (16k)²+(9k)² = diagonal²</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>256k²+81k² = 337k² = 139.7². Llavors k = 139.7/√337 ≈ 7.61. Amplada = 16k, alçada = 9k.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Diagonal: 55 × 2.54 = <strong>139.7 cm</strong></p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>(16k)²+(9k)² = 139.7² → 337k² = 19516 → k² = 57.91 → k ≈ <strong>7.61</strong></p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>Amplada = 16 × 7.61 ≈ <strong>121.7 cm</strong> · Alçada = 9 × 7.61 ≈ <strong>68.5 cm</strong></p></div>
+        <div class="sol-answer">Diagonal = 139.7 cm · Amplada ≈ 121.7 cm · Alçada ≈ 68.5 cm</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E3: Spider and fly -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label">
+      <div class="ex-num ext">E3</div>
+      <div class="ex-title">🕷️ L'aranya i la mosca</div>
+    </div>
+    <div class="stars"><span>★</span><span>★</span><span>★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Una habitació mesura <strong>4 m de llarg, 3 m d'ample i 2.5 m d'alçada</strong>. Una aranya és al centre del terra. Una mosca és al centre del sostre, a l'extrem oposat de l'habitació.</p>
+    <p>Calcula la distància <strong>en línia recta</strong> (a través de l'aire) entre l'aranya i la mosca.</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>En 3D, la distància entre dos punts és: d = √(Δx²+Δy²+Δz²). Aquí Δx=4 m, Δy=3 m, Δz=2.5 m.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Primer calcula la diagonal del terra: d_terra = √(4²+3²) = √25 = 5 m. Ara d_total = √(5²+2.5²).</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>d = √(25+6.25) = √31.25 ≈ 5.59 m. Aquí Pitàgores s'aplica dues vegades!</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Diagonal del terra (horitzonal): d₁ = √(4²+3²) = √(16+9) = √25 = 5 m</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Ara tenim un triangle rectangle amb catets 5 m (horitzontal) i 2.5 m (vertical).</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>d = √(5²+2.5²) = √(25+6.25) = √31.25 ≈ <strong>5.59 m</strong></p></div>
+        <div class="sol-answer">Distància aranya–mosca ≈ 5.59 m</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end main-col -->
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="tool-card" id="pyth-calc">
+    <div class="tool-header" data-t="calc_title"></div>
+    <div class="tool-body">
+      <div class="calc-mode-row">
+        <button class="active" data-mode="c" data-t="calc_find_c"></button>
+        <button data-mode="a" data-t="calc_find_a"></button>
+        <button data-mode="b" data-t="calc_find_b"></button>
+      </div>
+      <div class="calc-hint" data-t="calc_leave"></div>
+      <div class="calc-fields">
+        <div class="calc-field">
+          <label data-t="calc_leg_a"></label>
+          <input type="number" id="ci-a" min="0" step="any">
+        </div>
+        <div class="calc-field">
+          <label data-t="calc_leg_b"></label>
+          <input type="number" id="ci-b" min="0" step="any">
+        </div>
+        <div class="calc-field full">
+          <label data-t="calc_hyp"></label>
+          <input type="number" id="ci-c" min="0" step="any" disabled>
+        </div>
+      </div>
+      <button class="calc-go" data-t="calc_go"></button>
+      <div class="calc-out"></div>
+    </div>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-header" data-t="geo_title"></div>
+    <div class="tool-body">
+      <div class="geo-wrap">
+        <svg id="geo-svg" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div class="geo-controls">
+        <button class="geo-btn" id="geo-svg-clear" data-t="geo_clear"></button>
+      </div>
+      <div class="geo-status" id="geo-status"></div>
+    </div>
+  </div>
+</aside>
+
+</div><!-- end content-grid -->
+
+<footer class="footer"><p data-t="footer"></p></footer>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

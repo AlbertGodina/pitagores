@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A2 — Quadrats girats i àrees</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand"><div class="logo-icon">△</div> Pitàgores</a>
+  <div class="nav-links">
+    <a href="index.html" data-t="nav_home"></a>
+    <a href="a1.html" data-t="nav_a1"></a>
+    <a href="a2.html" class="active" data-t="nav_a2"></a>
+    <a href="a3.html" data-t="nav_a3"></a>
+    <a href="a4.html" data-t="nav_a4"></a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn" data-lang="ca">CA</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+</nav>
+
+<div class="activity-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html" data-t="nav_home"></a> / A2</div>
+    <div class="act-title-row">
+      <div class="act-icon" style="background:rgba(251,146,60,0.08);border-color:rgba(251,146,60,0.2)">⬛</div>
+      <div class="act-title-text">
+        <h1>Quadrats «girats» i àrees</h1>
+        <div class="subtitle">Exercicis de reforç i ampliació — complementa l'Activitat 2 de classe</div>
+      </div>
+    </div>
+    <div class="act-meta">
+      <div class="meta-chip">👤 Individual</div>
+      <div class="meta-chip">📚 Matemàtiques</div>
+      <div class="meta-chip">📐 Pitàgores · Àrees · Geoplanell</div>
+    </div>
+  </div>
+</div>
+
+<div class="content-grid">
+<div class="main-col">
+
+<div class="theory-card">
+  <h2 data-t="theory_label"></h2>
+  <div class="theory-body">
+    <p>Quan un quadrat no és alineat amb els eixos, el seu costat no es pot llegir directament. Usem Pitàgores per trobar-lo.</p>
+    <div class="formula-box">costat = √(Δx² + Δy²) &nbsp;→&nbsp; Àrea = costat² = Δx² + Δy²</div>
+    <p><strong>Truc:</strong> l'àrea del quadrat girat és sempre igual a Δx²+Δy² (la suma dels quadrats dels desplaçaments). No cal ni calcular l'arrel!</p>
+  </div>
+</div>
+
+<!-- REINF -->
+<div class="section-label">
+  <div class="section-label-line"></div>
+  <div class="section-label-text reinf" data-t="sec_reinf"></div>
+  <div class="section-label-line"></div>
+</div>
+
+<!-- R1 -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num">R1</div><div class="ex-title">Àrees de quadrats girats — taula completa</div></div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Omple la taula per a cada quadrat girat al geoplanell. Expressa el costat en forma exacta (arrel) i l'àrea en u².</p>
+    <div style="overflow-x:auto;margin:0.85rem 0">
+      <table style="border-collapse:collapse;font-size:0.88rem;width:100%">
+        <thead>
+          <tr style="background:var(--surface2);color:var(--muted)">
+            <th style="padding:0.5rem 0.75rem;border:1px solid var(--border);text-align:left">Quadrat</th>
+            <th style="padding:0.5rem 0.75rem;border:1px solid var(--border)">Δx</th>
+            <th style="padding:0.5rem 0.75rem;border:1px solid var(--border)">Δy</th>
+            <th style="padding:0.5rem 0.75rem;border:1px solid var(--border)">Costat</th>
+            <th style="padding:0.5rem 0.75rem;border:1px solid var(--border)">Àrea</th>
+          </tr>
+        </thead>
+        <tbody style="color:var(--muted)">
+          <tr><td style="padding:0.5rem 0.75rem;border:1px solid var(--border)">A</td><td style="border:1px solid var(--border);text-align:center">1</td><td style="border:1px solid var(--border);text-align:center">2</td><td style="border:1px solid var(--border);text-align:center;color:var(--dim)">?</td><td style="border:1px solid var(--border);text-align:center;color:var(--dim)">?</td></tr>
+          <tr style="background:var(--surface2)"><td style="padding:0.5rem 0.75rem;border:1px solid var(--border)">B</td><td style="border:1px solid var(--border);text-align:center">3</td><td style="border:1px solid var(--border);text-align:center">1</td><td style="border:1px solid var(--border);text-align:center;color:var(--dim)">?</td><td style="border:1px solid var(--border);text-align:center;color:var(--dim)">?</td></tr>
+          <tr><td style="padding:0.5rem 0.75rem;border:1px solid var(--border)">C</td><td style="border:1px solid var(--border);text-align:center">2</td><td style="border:1px solid var(--border);text-align:center">3</td><td style="border:1px solid var(--border);text-align:center;color:var(--dim)">?</td><td style="border:1px solid var(--border);text-align:center;color:var(--dim)">?</td></tr>
+          <tr style="background:var(--surface2)"><td style="padding:0.5rem 0.75rem;border:1px solid var(--border)">D</td><td style="border:1px solid var(--border);text-align:center">3</td><td style="border:1px solid var(--border);text-align:center">3</td><td style="border:1px solid var(--border);text-align:center;color:var(--dim)">?</td><td style="border:1px solid var(--border);text-align:center;color:var(--dim)">?</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Costat = √(Δx²+Δy²) i Àrea = Δx²+Δy². Per al quadrat A: √(1+4) = √5 i àrea = 5.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Quadrat B: √(9+1) = √10, àrea = 10. Quadrat C: √(4+9) = √13, àrea = 13.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Quadrat D: Δx=Δy=3 → costat = √18 = 3√2, àrea = 18.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">A</div><p>Δx=1, Δy=2 → costat = √5 ≈ 2.24 u · Àrea = 5 u²</p></div>
+        <div class="sol-step"><div class="sol-n">B</div><p>Δx=3, Δy=1 → costat = √10 ≈ 3.16 u · Àrea = 10 u²</p></div>
+        <div class="sol-step"><div class="sol-n">C</div><p>Δx=2, Δy=3 → costat = √13 ≈ 3.61 u · Àrea = 13 u²</p></div>
+        <div class="sol-step"><div class="sol-n">D</div><p>Δx=3, Δy=3 → costat = 3√2 ≈ 4.24 u · Àrea = 18 u²</p></div>
+        <div class="sol-answer">A:5 · B:10 · C:13 · D:18 u²</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- R2 -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num">R2</div><div class="ex-title">Quin quadrat és més gran?</div></div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Compara els quadrats girats P i Q sense calcular l'arrel quadrada:</p>
+    <ul>
+      <li>Quadrat P: costat amb Δx=3, Δy=2</li>
+      <li>Quadrat Q: costat amb Δx=1, Δy=4</li>
+    </ul>
+    <p>Quin té més àrea? En quant es diferencien?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea P = 3²+2² = 9+4 = 13 u². Àrea Q = 1²+4² = 1+16 = 17 u². Compara directament sense arrels!</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Àrea P = 3²+2² = 13 u² · Àrea Q = 1²+4² = 17 u²</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Q > P. Diferència = 17−13 = <strong>4 u²</strong></p></div>
+        <div class="sol-answer">Q és més gran per 4 u² (17 vs 13)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- R3 -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num">R3</div><div class="ex-title">Trobem els Δx i Δy d'un quadrat</div></div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Un quadrat girat al geoplanell té una <strong>àrea de 20 u²</strong>. Troba <strong>dos parells possibles</strong> de (Δx, Δy) enters positius que donin aquesta àrea. (Pista: busca enters a i b tals que a²+b²=20.)</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Necessites a²+b²=20. Prova valors petits: si a=1, b²=19 (no enter). Si a=2, b²=16 → b=4. ✓</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Si a=4, b²=4 → b=2 (el mateix parell). Posa a≤b per evitar repeticions. Intenta a=1,2,3,4.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Δx=2, Δy=4: 2²+4² = 4+16 = 20 ✓</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Δx=4, Δy=2: 4²+2² = 16+4 = 20 ✓ (el mateix quadrat girat 90°)</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>No n'hi ha cap altre amb enters (1²+19, 3²+11 no donen enters).</p></div>
+        <div class="sol-answer">(Δx,Δy) = (2,4) o (4,2)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXT -->
+<div class="section-label" style="margin-top:2rem">
+  <div class="section-label-line"></div>
+  <div class="section-label-text ext" data-t="sec_ext"></div>
+  <div class="section-label-line"></div>
+</div>
+
+<!-- E1: Pixel art -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num ext">E1</div><div class="ex-title">🎮 El diamant de pixel art</div></div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>En un joc de pixel art, un dissenyador vol crear un diamant (quadrat girat 45°) en una graella de píxels. El diamant ocupa exactament <strong>25 píxels quadrats d'àrea</strong>.</p>
+    <p>a) Si el diamant és un quadrat girat amb Δx = Δy (el mateix desplaçament en les dues direccions), quant ha de valer Δx?</p>
+    <p>b) En quina graella mínima (N × N píxels) cap el diamant? (La graella ha de contenir tots els vèrtexs.)</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Si Δx=Δy, llavors àrea = Δx²+Δx² = 2·Δx² = 25. Llavors Δx² = 12.5. Però Δx ha de ser enter, i 2·Δx² no pot donar 25! Reflexiona: possiblement Δx ≠ Δy.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Busca Δx i Δy enters tals que Δx²+Δy²=25. Prova: 3²+4²=9+16=25 ✓. Llavors Δx=3, Δy=4.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>La graella mínima ha de tenir costat Δx+Δy = 3+4 = 7 píxels (per contenir tots els vèrtexs del quadrat girat).</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Si Δx=Δy, àrea = 2Δx² = 25 → Δx²=12.5, no enter. Impossible amb Δx=Δy enters.</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Busquem Δx²+Δy²=25 amb enters: 3²+4²=9+16=25 ✓ → Δx=3, Δy=4.</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>La graella ha de tenir almenys (Δx+Δy)×(Δx+Δy) = <strong>7×7 píxels</strong>.</p></div>
+        <div class="sol-answer">Δx=3, Δy=4 · Graella mínima: 7×7 píxels</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E2: Origami -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num ext">E2</div><div class="ex-title">🗂️ Origami — el quadrat dins el quadrat</div></div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Partim d'un full de paper quadrat de <strong>12 cm × 12 cm</strong>. Doblegem cada cantonada fins al punt que divideix el costat en segments de <strong>a = 4 cm</strong> i <strong>b = 8 cm</strong>, de manera que es forma un quadrat interior girat.</p>
+    <div class="fig">
+      <svg viewBox="0 0 180 180" style="max-width:180px" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer square -->
+        <rect x="15" y="15" width="150" height="150" fill="rgba(56,189,248,0.04)" stroke="var(--border)" stroke-width="1.5"/>
+        <!-- Inner tilted square (a=4/12 fraction = 50px, b=8/12=100px of 150) -->
+        <polygon points="65,15 165,65 115,165 15,115" fill="rgba(251,146,60,0.1)" stroke="#fb923c" stroke-width="2"/>
+        <!-- Labels -->
+        <text x="37" y="13" fill="#94a3b8" font-size="10" font-family="DM Mono,monospace">4</text>
+        <text x="110" y="13" fill="#94a3b8" font-size="10" font-family="DM Mono,monospace">8</text>
+        <text x="3" y="73" fill="#94a3b8" font-size="10" font-family="DM Mono,monospace">8</text>
+        <text x="3" y="140" fill="#94a3b8" font-size="10" font-family="DM Mono,monospace">4</text>
+        <text x="80" y="100" fill="#fb923c" font-size="11" font-family="DM Mono,monospace" text-anchor="middle">?</text>
+      </svg>
+    </div>
+    <p>a) Quant mesura el costat del quadrat interior?</p>
+    <p>b) Quina fracció de l'àrea del full original representa el quadrat interior?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>El costat del quadrat interior connecta el punt que divideix un costat (a 4 cm d'un extrem) amb el punt del costat adjacent (a 8 cm d'aquell extrem). Δx=8, Δy=4.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Costat interior = √(4²+8²) = √80 = 4√5 cm. Àrea interior = 4²+8² = 80 cm².</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Àrea total = 12² = 144 cm². Fracció = 80/144 = 5/9.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Δx=8 cm, Δy=4 cm → costat = √(64+16) = √80 = 4√5 ≈ 8.94 cm</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Àrea quadrat interior = 80 cm² · Àrea full = 144 cm²</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>Fracció = 80/144 = <strong>5/9</strong> ≈ 55.6% del full</p></div>
+        <div class="sol-answer">Costat = 4√5 ≈ 8.94 cm · Fracció = 5/9</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E3: Minecraft -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num ext">E3</div><div class="ex-title">⛏️ Minecraft — camí diagonal</div></div>
+    <div class="stars"><span>★</span><span>★</span><span>★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>En Minecraft, cada bloc mesura 1 m × 1 m. Un jugador vol construir un camí recte des del punt <strong>A(0,0)</strong> fins al punt <strong>B(12,5)</strong> (coordenades en blocs).</p>
+    <p>a) Quant mesura el camí en metres?</p>
+    <p>b) Si el jugador camina a <strong>4.3 m/s</strong>, quant trigarà a recórrer el camí?</p>
+    <p>c) Un altre camí va d'A fins a C(7,7). Quin camí és més llarg, A→B o A→C?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Distància A→B = √(12²+5²) = √(144+25) = √169 = 13 m. Reconèixes la terna?</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Temps = distància / velocitat = 13 / 4.3 s. Distància A→C = √(7²+7²) = 7√2 ≈ 9.9 m.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>d(A,B) = √(12²+5²) = √169 = <strong>13 m</strong> (terna 5-12-13 escalada!)</p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Temps = 13 / 4.3 ≈ <strong>3.02 s</strong></p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>d(A,C) = √(49+49) = 7√2 ≈ 9.9 m. El camí A→B (13 m) és més llarg.</p></div>
+        <div class="sol-answer">A→B = 13 m · Temps ≈ 3.02 s · A→B > A→C</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end main-col -->
+
+<aside class="sidebar">
+  <div class="tool-card" id="pyth-calc">
+    <div class="tool-header" data-t="calc_title"></div>
+    <div class="tool-body">
+      <div class="calc-mode-row">
+        <button class="active" data-mode="c" data-t="calc_find_c"></button>
+        <button data-mode="a" data-t="calc_find_a"></button>
+        <button data-mode="b" data-t="calc_find_b"></button>
+      </div>
+      <div class="calc-hint" data-t="calc_leave"></div>
+      <div class="calc-fields">
+        <div class="calc-field"><label data-t="calc_leg_a"></label><input type="number" id="ci-a" min="0" step="any"></div>
+        <div class="calc-field"><label data-t="calc_leg_b"></label><input type="number" id="ci-b" min="0" step="any"></div>
+        <div class="calc-field full"><label data-t="calc_hyp"></label><input type="number" id="ci-c" min="0" step="any" disabled></div>
+      </div>
+      <button class="calc-go" data-t="calc_go"></button>
+      <div class="calc-out"></div>
+    </div>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-header">⬛ Àrea quadrat girat</div>
+    <div class="tool-body">
+      <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">Introdueix els desplaçaments per calcular l'àrea d'un quadrat girat.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.6rem">
+        <div class="calc-field"><label>Δx (u)</label><input type="number" id="sq-dx" min="1" step="1" value="2"></div>
+        <div class="calc-field"><label>Δy (u)</label><input type="number" id="sq-dy" min="1" step="1" value="3"></div>
+      </div>
+      <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:0.75rem;font-family:'DM Mono',monospace;font-size:0.85rem" id="sq-result"></div>
+      <svg id="sq-preview" viewBox="0 0 160 160" style="display:block;margin:0.75rem auto 0;background:var(--surface2);border:1px solid var(--border);border-radius:8px;width:100%" xmlns="http://www.w3.org/2000/svg"></svg>
+      <script>
+        function updateSq(){
+          const dx=parseInt(document.getElementById('sq-dx')?.value)||1;
+          const dy=parseInt(document.getElementById('sq-dy')?.value)||1;
+          const area=dx*dx+dy*dy;
+          const side=Math.sqrt(area);
+          document.getElementById('sq-result').innerHTML=
+            `costat = √(${dx}²+${dy}²) = √${area} ≈ ${side.toFixed(3)} u<br>`+
+            `<strong style="color:var(--green)">Àrea = ${area} u²</strong>`;
+          // Draw preview
+          const svg=document.getElementById('sq-preview');
+          if(!svg) return;
+          svg.innerHTML='';
+          const max=Math.max(dx,dy);
+          const scale=Math.min(60/max,20);
+          const cx=80,cy=80;
+          const verts=[
+            {x:cx,y:cy-dy*scale},
+            {x:cx+dx*scale,y:cy},
+            {x:cx,y:cy+dy*scale},
+            {x:cx-dx*scale,y:cy}
+          ];
+          // grid dots
+          const gs=scale; const rows=Math.ceil(160/gs);
+          for(let r=0;r<rows;r++) for(let c=0;c<rows;c++){
+            const d=document.createElementNS('http://www.w3.org/2000/svg','circle');
+            d.setAttribute('cx',(c*gs)%(160));d.setAttribute('cy',(r*gs)%(160));
+            d.setAttribute('r',1.5);d.setAttribute('fill','var(--border)');
+            svg.appendChild(d);
+          }
+          const poly=document.createElementNS('http://www.w3.org/2000/svg','polygon');
+          poly.setAttribute('points',verts.map(v=>`${v.x},${v.y}`).join(' '));
+          poly.setAttribute('fill','rgba(251,146,60,0.12)');
+          poly.setAttribute('stroke','#fb923c');poly.setAttribute('stroke-width','2');
+          svg.appendChild(poly);
+        }
+        document.addEventListener('DOMContentLoaded',()=>{
+          updateSq();
+          ['sq-dx','sq-dy'].forEach(id=>document.getElementById(id)?.addEventListener('input',updateSq));
+        });
+      </script>
+    </div>
+  </div>
+</aside>
+
+</div>
+<footer class="footer"><p data-t="footer"></p></footer>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

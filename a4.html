@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A4 — Aplicacions reals de Pitàgores</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand"><div class="logo-icon">△</div> Pitàgores</a>
+  <div class="nav-links">
+    <a href="index.html" data-t="nav_home"></a>
+    <a href="a1.html" data-t="nav_a1"></a>
+    <a href="a2.html" data-t="nav_a2"></a>
+    <a href="a3.html" data-t="nav_a3"></a>
+    <a href="a4.html" class="active" data-t="nav_a4"></a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn" data-lang="ca">CA</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+</nav>
+
+<div class="activity-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html" data-t="nav_home"></a> / A4</div>
+    <div class="act-title-row">
+      <div class="act-icon" style="background:rgba(52,211,153,0.08);border-color:rgba(52,211,153,0.2)">🌍</div>
+      <div class="act-title-text">
+        <h1>Aplicacions reals de Pitàgores</h1>
+        <div class="subtitle">Exercicis de reforç i ampliació — complementa l'Activitat 4a de classe</div>
+      </div>
+    </div>
+    <div class="act-meta">
+      <div class="meta-chip">👤 Individual</div>
+      <div class="meta-chip">📚 Matemàtiques</div>
+      <div class="meta-chip">📐 Pitàgores · Distàncies · Pla cartesià</div>
+    </div>
+  </div>
+</div>
+
+<div class="content-grid">
+<div class="main-col">
+
+<div class="theory-card">
+  <h2 data-t="theory_label"></h2>
+  <div class="theory-body">
+    <p>La distància entre dos punts A(x₁,y₁) i B(x₂,y₂) al pla cartesià s'obté directament amb Pitàgores:</p>
+    <div class="formula-box">d(A,B) = √((x₂−x₁)² + (y₂−y₁)²)</div>
+    <p>Els catets del triangle rectangle format són <strong>|x₂−x₁|</strong> (horitzontal) i <strong>|y₂−y₁|</strong> (vertical). La distància és la hipotenusa.</p>
+  </div>
+</div>
+
+<div class="section-label">
+  <div class="section-label-line"></div>
+  <div class="section-label-text reinf" data-t="sec_reinf"></div>
+  <div class="section-label-line"></div>
+</div>
+
+<!-- R1: Distance between points -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num">R1</div><div class="ex-title">Distàncies al pla cartesià</div></div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Calcula la distància entre cada parell de punts:</p>
+    <ul>
+      <li>a) A(1, 1) i B(4, 5)</li>
+      <li>b) C(−2, 3) i D(4, −5)</li>
+      <li>c) E(0, 0) i F(√3, 1)</li>
+    </ul>
+    <p>Per a l'apartat b), vigila amb els signes en fer les restes.</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Usa d = √((x₂−x₁)²+(y₂−y₁)²). Per a l'apartat a: Δx=3, Δy=4 → d = √(9+16) = 5.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Apartat b: Δx = 4−(−2) = 6, Δy = −5−3 = −8. Al quadrar: 36+64 = 100 → d = 10.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Apartat c: Δx=√3, Δy=1. d = √((√3)²+1²) = √(3+1) = √4 = 2.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">a</div><p>d(A,B) = √(3²+4²) = √25 = <strong>5 unitats</strong></p></div>
+        <div class="sol-step"><div class="sol-n">b</div><p>d(C,D) = √(6²+(−8)²) = √(36+64) = √100 = <strong>10 unitats</strong></p></div>
+        <div class="sol-step"><div class="sol-n">c</div><p>d(E,F) = √((√3)²+1²) = √4 = <strong>2 unitats</strong></p></div>
+        <div class="sol-answer">a: 5 · b: 10 · c: 2</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- R2: Is a point on a circle? -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num">R2</div><div class="ex-title">Punt dins, fora o sobre la circumferència?</div></div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Una circumferència té centre O(0, 0) i radi <strong>r = 5</strong>. Determina si els punts següents estan dins, fora o sobre la circumferència:</p>
+    <ul>
+      <li>a) P(3, 4)</li>
+      <li>b) Q(2, 4)</li>
+      <li>c) R(1, 5)</li>
+    </ul>
+    <p>Recorda: un punt P és sobre la circumferència si d(O,P) = r, dins si d(O,P) &lt; r, i fora si d(O,P) &gt; r.</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Calcula la distància de cada punt a l'origen (0,0) i compara amb r=5.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>P(3,4): d = √(9+16) = 5 = r → sobre la circumferència. Q(2,4): d = √(4+16) = √20 ≈ 4.47 &lt; 5 → dins.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">a</div><p>d(O,P) = √(9+16) = 5 = r → <strong>sobre</strong> la circumferència</p></div>
+        <div class="sol-step"><div class="sol-n">b</div><p>d(O,Q) = √(4+16) = √20 ≈ 4.47 &lt; 5 → <strong>dins</strong></p></div>
+        <div class="sol-step"><div class="sol-n">c</div><p>d(O,R) = √(1+25) = √26 ≈ 5.10 &gt; 5 → <strong>fora</strong></p></div>
+        <div class="sol-answer">P: sobre · Q: dins · R: fora</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- R3: Safety of a ladder -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num">R3</div><div class="ex-title">Seguretat d'una escala de mà</div></div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Per norma de seguretat, una escala de mà s'ha de col·locar formant un <strong>angle segur</strong>: la base s'ha de separar de la paret com a mínim <em>1/4</em> de la longitud de l'escala i com a màxim <em>1/3</em>.</p>
+    <p>Una escala de <strong>4.8 m</strong> es recolza en una paret. Si la base es col·loca a <strong>1.5 m</strong> de la paret:</p>
+    <p>a) ¿Compleix la norma de seguretat? (Comprova si 1.5 m està entre 4.8/4 i 4.8/3.)</p>
+    <p>b) A quina altura arriba l'escala a la paret?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Rang segur: [4.8/4, 4.8/3] = [1.2 m, 1.6 m]. Comprova si 1.5 m hi cau dins.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Alçada: h = √(4.8²−1.5²) = √(23.04−2.25) = √20.79 ≈ 4.56 m.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Rang segur: [4.8/4, 4.8/3] = [1.2 m, 1.6 m]. Com 1.2 ≤ 1.5 ≤ 1.6 → ✓ <strong>Sí compleix</strong></p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>h = √(4.8²−1.5²) = √(23.04−2.25) = √20.79 ≈ <strong>4.56 m</strong></p></div>
+        <div class="sol-answer">Sí compleix la norma · h ≈ 4.56 m</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXT -->
+<div class="section-label" style="margin-top:2rem">
+  <div class="section-label-line"></div>
+  <div class="section-label-text ext" data-t="sec_ext"></div>
+  <div class="section-label-line"></div>
+</div>
+
+<!-- E1: Drone on a city map -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num ext">E1</div><div class="ex-title">🚁 El dron de repartiment</div></div>
+    <div class="stars"><span>★</span><span class="off">★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Una empresa de repartiment usa drons sobre un mapa de la ciutat. Cada unitat del mapa equival a <strong>200 metres</strong> reals. El magatzem és al punt M(1, 2) del mapa.</p>
+    <p>a) El dron ha de portar un paquet al punt A(7, 10). Quants metres volarà?</p>
+    <p>b) Té la bateria per a <strong>2500 m</strong> d'anada i tornada (combinades). Pot fer el viatge d'anada i tornada?</p>
+    <p>c) Quin és el punt més llunyà del mapa on el dron pot arribar i tornar, si vola en línia recta?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Distància mapa M→A: d = √((7−1)²+(10−2)²) = √(36+64) = √100 = 10 unitats.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>En metres reals: 10 × 200 = 2000 m. Anada + tornada = 4000 m > 2500 m.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Radi màxim (anada + tornada ≤ 2500 m): d_total ≤ 2500 m → d_anada ≤ 1250 m → en unitats ≤ 6.25 u.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>d(M,A) = √(6²+8²) = √100 = 10 u → <strong>2000 m</strong></p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Anada + tornada = 4000 m > 2500 m → <strong>No pot</strong> fer el viatge complet</p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>Radi màxim = 2500/2 = 1250 m = 6.25 unitats del mapa. Qualsevol punt a ≤ 6.25 u de M(1,2).</p></div>
+        <div class="sol-answer">2000 m (anada) · No pot tornar · Radi màxim 6.25 u = 1250 m</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E2: GPS navigation -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num ext">E2</div><div class="ex-title">📍 GPS — el sender de muntanya</div></div>
+    <div class="stars"><span>★</span><span>★</span><span class="off">★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>Un sender de muntanya porta un GPS que mostra les coordenades en metres respecte al punt de sortida. La seva posició actual és <strong>A(800, 600)</strong>. El refugi on vol arribar és a <strong>B(2000, 1500)</strong>.</p>
+    <p>a) Quina distància li falta en línia recta (en metres)?</p>
+    <p>b) Si camina a una velocitat mitjana de <strong>1.2 m/s</strong>, quants minuts trigarà a arribar (en línia recta)?</p>
+    <p>c) El sender es para a descansar a un punt C que és exactament a mig camí entre A i B. Quines són les coordenades de C?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>d(A,B) = √((2000−800)²+(1500−600)²) = √(1200²+900²) = √(1440000+810000).</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>√2250000 = 1500 m. Temps = 1500/1.2 s → converteix a minuts.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Punt mig C = ((x₁+x₂)/2, (y₁+y₂)/2) = ((800+2000)/2, (600+1500)/2).</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>d = √(1200²+900²) = √(1440000+810000) = √2250000 = <strong>1500 m</strong></p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Temps = 1500/1.2 = 1250 s = 1250/60 ≈ <strong>20.8 minuts</strong></p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>C = ((800+2000)/2, (600+1500)/2) = <strong>C(1400, 1050)</strong></p></div>
+        <div class="sol-answer">1500 m · ≈ 20.8 min · C(1400, 1050)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E3: Wheelchair ramp -->
+<div class="exercise-card">
+  <div class="exercise-header">
+    <div class="ex-label"><div class="ex-num ext">E3</div><div class="ex-title">♿ Rampa d'accessibilitat — normativa</div></div>
+    <div class="stars"><span>★</span><span>★</span><span>★</span></div>
+  </div>
+  <div class="exercise-body">
+    <p>La normativa d'accessibilitat espanyola diu que una rampa per a cadires de rodes no pot tenir un pendent superior al <strong>8%</strong> (8 cm de pujada per cada 100 cm de recorregut horitzontal).</p>
+    <p>Un edifici té una entrada que s'eleva <strong>36 cm</strong> respecte del nivell del carrer.</p>
+    <p>a) Quina és la longitud mínima horitzontal que ha de tenir la rampa per complir la normativa?</p>
+    <p>b) Quina és la longitud real de la rampa (la longitud de la superfície inclinada)?</p>
+    <p>c) Si la rampa necessita una barana a cada costat i cada barana mesura la longitud de la rampa, quants metres de barana es necessiten?</p>
+    <div class="hints-wrap">
+      <button class="hints-btn" data-t="show_hints"></button>
+      <div class="hints-body">
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Pendent 8%: per cada 8 cm de pujada, 100 cm horitzontals. Per 36 cm de pujada: base = 36 × (100/8) = 450 cm = 4.5 m.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>Longitud real = hipotenusa = √(base² + alçada²) = √(450² + 36²) = √(202500 + 1296) = √203796.</div>
+        <div class="hint-pill"><div class="hint-tag" data-t="hint_lbl"></div>√203796 ≈ 451.4 cm ≈ 4.514 m. Total barana = 2 × 4.514 m.</div>
+        <div class="hint-nav">
+          <button class="hn-btn hn-prev" data-t="prev_hint" disabled></button>
+          <span class="hn-count"></span>
+          <button class="hn-btn hn-next" data-t="next_hint"></button>
+        </div>
+      </div>
+    </div>
+    <div class="sol-wrap">
+      <button class="sol-btn" data-t="show_sol"></button>
+      <div class="sol-panel">
+        <h4 data-t="sol_title"></h4>
+        <div class="sol-step"><div class="sol-n">1</div><p>Base mínima = 36 × (100/8) = <strong>450 cm = 4.5 m</strong></p></div>
+        <div class="sol-step"><div class="sol-n">2</div><p>Longitud = √(450²+36²) = √203796 ≈ <strong>451.4 cm ≈ 4.51 m</strong></p></div>
+        <div class="sol-step"><div class="sol-n">3</div><p>Total barana = 2 × 451.4 ≈ <strong>902.8 cm ≈ 9.03 m</strong></p></div>
+        <div class="sol-answer">Base ≥ 4.5 m · Rampa ≈ 4.51 m · Barana total ≈ 9.03 m</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- main-col -->
+
+<aside class="sidebar">
+  <div class="tool-card" id="pyth-calc">
+    <div class="tool-header" data-t="calc_title"></div>
+    <div class="tool-body">
+      <div class="calc-mode-row">
+        <button class="active" data-mode="c" data-t="calc_find_c"></button>
+        <button data-mode="a" data-t="calc_find_a"></button>
+        <button data-mode="b" data-t="calc_find_b"></button>
+      </div>
+      <div class="calc-hint" data-t="calc_leave"></div>
+      <div class="calc-fields">
+        <div class="calc-field"><label data-t="calc_leg_a"></label><input type="number" id="ci-a" min="0" step="any"></div>
+        <div class="calc-field"><label data-t="calc_leg_b"></label><input type="number" id="ci-b" min="0" step="any"></div>
+        <div class="calc-field full"><label data-t="calc_hyp"></label><input type="number" id="ci-c" min="0" step="any" disabled></div>
+      </div>
+      <button class="calc-go" data-t="calc_go"></button>
+      <div class="calc-out"></div>
+    </div>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-header" data-t="coord_title"></div>
+    <div class="tool-body">
+      <div class="coord-wrap">
+        <canvas id="coord-canvas" width="260" height="220"></canvas>
+      </div>
+      <div class="coord-row">
+        <div class="coord-group"><label>P₁ x₁</label><input type="number" id="coord-canvas-x1" step="1"></div>
+        <div class="coord-group"><label>P₁ y₁</label><input type="number" id="coord-canvas-y1" step="1"></div>
+      </div>
+      <div class="coord-row">
+        <div class="coord-group"><label>P₂ x₂</label><input type="number" id="coord-canvas-x2" step="1"></div>
+        <div class="coord-group"><label>P₂ y₂</label><input type="number" id="coord-canvas-y2" step="1"></div>
+      </div>
+      <div class="coord-result" id="coord-res"></div>
+    </div>
+  </div>
+</aside>
+
+</div>
+<footer class="footer"><p data-t="footer"></p></footer>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
